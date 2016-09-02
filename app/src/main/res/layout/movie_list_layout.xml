@@ -1,0 +1,59 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_margin="4dp"
+    card_view:cardCornerRadius="4dp"
+    android:foreground="?selectableItemBackground">
+
+    <LinearLayout
+        android:id="@+id/holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/movie_photo"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/photo_placeholder"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/movie_name"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:maxLines="4"
+            android:paddingBottom="4dp"
+            android:paddingEnd="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingStart="16dp"
+            android:paddingTop="16dp"
+            android:textColor="@color/theme_primary_text" />
+
+        <TextView
+            android:id="@+id/release_date"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-light"
+            android:maxLines="1"
+            android:paddingBottom="16dp"
+            android:paddingEnd="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingStart="16dp"
+            android:singleLine="true"
+            android:textColor="@color/theme_secondary_text" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
